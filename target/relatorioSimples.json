@@ -1,0 +1,61 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#language: pt"
+      }
+    ],
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 44253566626,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Consultar Ovo de Pascoa",
+        "description": "",
+        "id": "consulta;consultar-ovo-de-pascoa",
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 16558049070,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "que acesso a Wikipedia em Portugues",
+            "match": {
+              "location": "Post.queAcessoAWikipediaEmPortugues()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "line": 5,
+            "name": "pesquiso por \"Ovo de Páscoa\"",
+            "keyword": "Quando "
+          },
+          {
+            "line": 6,
+            "name": "Exibe a expresao \"Ovo de Páscoa\" no titulo da guia",
+            "keyword": "Entao "
+          }
+        ]
+      }
+    ],
+    "name": "Consulta",
+    "description": "",
+    "id": "consulta",
+    "keyword": "Funcionalidade",
+    "uri": "Post.feature"
+  }
+]

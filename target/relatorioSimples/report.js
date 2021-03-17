@@ -13,7 +13,7 @@ formatter.feature({
   "keyword": "Funcionalidade"
 });
 formatter.before({
-  "duration": 44253566626,
+  "duration": 20618689699,
   "status": "passed"
 });
 formatter.scenario({
@@ -43,7 +43,7 @@ formatter.match({
   "location": "Post.queAcessoAWikipediaEmPortugues()"
 });
 formatter.result({
-  "duration": 16558049070,
+  "duration": 12261857405,
   "status": "passed"
 });
 });

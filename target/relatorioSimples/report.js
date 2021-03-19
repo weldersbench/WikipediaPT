@@ -2,48 +2,94 @@ $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.
 formatter.feature({
   "comments": [
     {
-      "line": 1,
-      "value": "#language: pt"
+      "line": 2,
+      "value": "#Funcionalidade: Consulta"
+    },
+    {
+      "line": 3,
+      "value": "#Cenario: Consultar Ovo de Pascoa"
+    },
+    {
+      "line": 4,
+      "value": "#Dado que acesso a Wikipedia em Portugues"
+    },
+    {
+      "line": 5,
+      "value": "#Quando pesquiso por \"Ovo de Páscoa\""
+    },
+    {
+      "line": 6,
+      "value": "#Entao Exibe a expresao \"Ovo de Páscoa\" no titulo da guia"
     }
   ],
-  "line": 2,
-  "name": "Consulta",
+  "line": 9,
+  "name": ": Consulta",
   "description": "",
-  "id": "consulta",
-  "keyword": "Funcionalidade"
+  "id": ":-consulta",
+  "keyword": "Feature"
 });
 formatter.before({
-  "duration": 20618689699,
+  "duration": 46957097446,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 3,
+  "line": 10,
   "name": "Consultar Ovo de Pascoa",
   "description": "",
-  "id": "consulta;consultar-ovo-de-pascoa",
+  "id": ":-consulta;consultar-ovo-de-pascoa",
   "type": "scenario",
-  "keyword": "Cenario"
+  "keyword": "Scenario"
 });
 formatter.step({
-  "line": 4,
+  "line": 11,
   "name": "que acesso a Wikipedia em Portugues",
-  "keyword": "Dado "
+  "keyword": "Given "
 });
 formatter.step({
-  "line": 5,
+  "line": 12,
   "name": "pesquiso por \"Ovo de Páscoa\"",
-  "keyword": "Quando "
+  "keyword": "When "
 });
 formatter.step({
-  "line": 6,
+  "line": 13,
   "name": "Exibe a expresao \"Ovo de Páscoa\" no titulo da guia",
-  "keyword": "Entao "
+  "keyword": "Then "
 });
 formatter.match({
   "location": "Post.queAcessoAWikipediaEmPortugues()"
 });
 formatter.result({
-  "duration": 12261857405,
+  "duration": 11468466694,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Ovo de Páscoa",
+      "offset": 14
+    }
+  ],
+  "location": "Post.pesquisoPor(String)"
+});
+formatter.result({
+  "duration": 9848197005,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Ovo de Páscoa",
+      "offset": 18
+    }
+  ],
+  "location": "Post.exibeAExpresaoNoTituloDaGuia(String)"
+});
+formatter.result({
+  "duration": 323543471,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 4455154776,
   "status": "passed"
 });
 });
